@@ -15,7 +15,7 @@ npm install jmodal2
 ```jsx
 import React, { useState } from "react"
 import { render } from "react-dom"
-import JModal from './JModal'
+import JModal from './jmodal2'
 
 const App = () => {
 
