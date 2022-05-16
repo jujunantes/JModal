@@ -1,3 +1,3 @@
-import JModal from './components/JModal'
+import JModal from './lib'
 
 export { JModal }
