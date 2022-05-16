@@ -1,3 +1,4 @@
+import React from 'react'
 import './JModal.css'
 
 function JModal({title, text, btn_text,  closingModale}) {
@@ -6,7 +7,7 @@ function JModal({title, text, btn_text,  closingModale}) {
     if (btn_text === undefined) {btn_text = 'OK'}
     return (
         <div id="confirmation" className='JModal'>
-            <div className='JModal_window JModal_blur'>
+            <div className='JModal_window'>
                 <h3 className='JModal_h3'>{title}</h3>
                 <p className='JModal_p'>{text}</p>
                 <p className='JModal_close-button' onClick={closingModale}>&#10006;</p>

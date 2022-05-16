@@ -1,18 +1,20 @@
 {
-  "name": "jmodal",
-  "description": "Two test React components",
+  "name": "jmodal2",
+  "description": "A simple modal component for React",
   "author": "Julien Marcel",
   "keywords": ["react", "components", "ui", "modal"],
-  "version": "1.0.0",
+  "version": "1.0.5",
   "private": false,
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "cross-env": "^7.0.3",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "rimraf": "^3.0.2"
-  },
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "files": [ "dist", "README.md" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujunantes/JModal"
+},
+"bugs": {
+  "url": "https://github.com/jujunantes/JModa/issues"
+},
   "scripts": {
     "start": "react-scripts start",
     "prebuild": "rimraf dist",
@@ -37,7 +39,15 @@
       "last 1 safari version"
     ]
   },
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1"
+  },
   "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10"
