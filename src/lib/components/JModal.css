@@ -1,0 +1,122 @@
+:root {
+	--main-bg-color: #eb6304;
+	--p-text-color: dimgray;
+	--button-main-color: #de5e04;
+	--button-border-color: #d25904;
+  }
+
+.JModal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	animation: JModal_changeOpacity 500ms ease-in-out;
+	background: rgba(255, 255, 255, 0.2);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(10px);
+}
+
+@keyframes JModal_changeOpacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.JModal_window {
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	max-width: 25rem;
+	top: 40%;
+	border-radius: 0.25rem;
+	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	z-index: 15;
+	display: flex;
+	flex-direction: column;
+}
+
+.JModal_h3 {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #fff;
+	background-color: var(--main-bg-color);
+	border-radius: 0.25rem 0.25rem 0 0;
+	margin: 0;
+}
+
+.JModal_p {
+	color: var(--p-text-color);
+	font-family: inherit;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 1.25rem;
+	text-rendering: optimizeLegibility;
+}
+
+.JModal_close-button {
+	transition: all 0.5s ease;
+	position: absolute;
+	background-color: var(--button-main-color);
+	padding: 1% 2%;
+	left: 0;
+	top: 0;
+	margin-left: -10px;
+	margin-top: -9px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	color: white;
+	cursor: pointer;
+	-webkit-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: -3px 1px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.JModal_close-button:hover {
+	background-color: var(--main-bg-color);
+	color: #fff;
+	transform: rotate(0.25turn)
+}
+
+.JModal_button {
+	height: 54px;
+
+	padding-left: 30px;
+	padding-right: 30px;
+
+	background-color: var(--button-main-color);
+	border: 1px solid var(--button-border-color);
+	border-radius: .25rem;
+
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.JModal_button:hover {
+	background-color: var(--main-bg-color);
+	border-color: var(--button-main-color);
+}

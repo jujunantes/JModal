@@ -1,20 +1,22 @@
 {
   "name": "jmodal",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Two test React components",
+  "author": "Julien Marcel",
+  "keywords": ["react", "components", "ui", "modal"],
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@babel/polyfill": "^7.12.1",
+    "cross-env": "^7.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "rimraf": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10"
   }
 }
