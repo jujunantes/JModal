@@ -7,7 +7,7 @@ JModal is a simple React componant that displays a simple but configurable modal
 ## Installation
 
 ```bash
-npm install jmodal
+npm install jmodal2
 ```
 
 ## How to use
