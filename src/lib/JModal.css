@@ -1,8 +1,8 @@
 :root {
-	--main-bg-color: #eb6304;
-	--p-text-color: dimgray;
-	--button-main-color: #de5e04;
-	--button-border-color: #d25904;
+	--JModal_main-bg-color: #eb6304;
+	--JModal_p-text-color: dimgray;
+	--JModal_button-main-color: #de5e04;
+	--JModal_button-border-color: #d25904;
   }
 
 .JModal {
@@ -51,13 +51,13 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	color: #fff;
-	background-color: var(--main-bg-color);
+	background-color: var(--JModal_main-bg-color);
 	border-radius: 0.25rem 0.25rem 0 0;
 	margin: 0;
 }
 
 .JModal_p {
-	color: var(--p-text-color);
+	color: var(--JModal_p-text-color);
 	font-family: inherit;
 	font-weight: normal;
 	font-size: 1rem;
@@ -69,7 +69,7 @@
 .JModal_close-button {
 	transition: all 0.5s ease;
 	position: absolute;
-	background-color: var(--button-main-color);
+	background-color: var(--JModal_button-main-color);
 	padding: 1% 2%;
 	left: 0;
 	top: 0;
@@ -85,7 +85,7 @@
 }
 
 .JModal_close-button:hover {
-	background-color: var(--main-bg-color);
+	background-color: var(--JModal_main-bg-color);
 	color: #fff;
 	transform: rotate(0.25turn)
 }
@@ -96,8 +96,8 @@
 	padding-left: 30px;
 	padding-right: 30px;
 
-	background-color: var(--button-main-color);
-	border: 1px solid var(--button-border-color);
+	background-color: var(--JModal_button-main-color);
+	border: 1px solid var(--JModal_button-border-color);
 	border-radius: .25rem;
 
 	color: #fff;
@@ -117,6 +117,6 @@
 }
 
 .JModal_button:hover {
-	background-color: var(--main-bg-color);
-	border-color: var(--button-main-color);
+	background-color: var(--JModal_main-bg-color);
+	border-color: var(--JModal_button-main-color);
 }

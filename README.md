@@ -7,7 +7,7 @@ JModal is a simple React componant that displays a simple but configurable modal
 ## Installation
 
 ```bash
-npm install jmodal2
+npm install jmodal
 ```
 
 ## How to use
@@ -15,7 +15,7 @@ npm install jmodal2
 ```jsx
 import React, { useState } from "react"
 import { render } from "react-dom"
-import JModal from './jmodal2'
+import JModal from './jmodal'
 
 const App = () => {
 
@@ -44,7 +44,7 @@ render(<App />, document.getElementById("root"))
 
 ## Styling
 
-JModal'css exposes the following rules :
+JModal's css exposes the following rules :
 
 - JModal: styles the overlay's background;
 - JModal_window: styles the Modal's window;
